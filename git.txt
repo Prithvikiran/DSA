@@ -1,0 +1,37 @@
+To create a repository and upload files to GitHub using the terminal, you can follow these steps:
+
+1. Install Git: Make sure you have Git installed on your computer. You can download it from the official Git website and follow the installation instructions for your operating system.
+
+2. Open Terminal: Open the terminal or command prompt on your computer.
+
+3. Navigate to the desired directory: Use the `cd` command to navigate to the directory where you want to create your local repository and upload the files.
+
+4. Initialize a new Git repository: Run the following command to initialize a new Git repository in the current directory:
+```
+git init
+```
+
+5. Create a new repository on GitHub: Go to the GitHub website and create a new repository by clicking on the "New" button. Provide a repository name, description, and any other desired settings. Do not initialize the repository with a README, .gitignore, or license, as we will be uploading our own files.
+
+6. Connect the local repository to the remote repository: Copy the HTTPS or SSH URL of your newly created GitHub repository.
+
+7. Add the remote repository: In your terminal, run the following command, replacing `[URL]` with the URL you copied in the previous step:
+```
+git remote add origin [URL]
+```
+
+8. Stage and commit your files: Place the files you want to upload to GitHub in the repository's directory. Use the following commands to stage and commit the files:
+```
+git add .
+git commit -m "Initial commit"
+```
+
+9. Push the files to GitHub: Finally, push the committed files to the remote repository on GitHub using the following command:
+```
+git push -u origin master
+```
+If you are using a branch other than `master`, replace `master` with the branch name.
+
+10. Provide GitHub credentials: You will be prompted to enter your GitHub username and password or personal access token. Enter the required information to authenticate and push the files to GitHub.
+
+Once the `git push` command finishes executing, your files will be uploaded to the GitHub repository. You can now view them on the GitHub website.
