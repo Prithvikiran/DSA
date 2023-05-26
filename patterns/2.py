@@ -1,0 +1,1 @@
+print("Pattern codes are done in the 1.py file")
